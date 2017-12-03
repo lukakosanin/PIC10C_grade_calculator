@@ -8,18 +8,6 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    /*connect(ui->hw1_spinbox,SIGNAL(valueChanged(int)),this,SLOT(update_grade(HW1)));
-    connect(ui->hw2_spinbox,SIGNAL(valueChanged(int)),this,SLOT(update_grade(HW2)));
-    connect(ui->hw3_spinbox,SIGNAL(valueChanged(int)),this,SLOT(update_grade(HW3)));
-    connect(ui->hw4_spinbox,SIGNAL(valueChanged(int)),this,SLOT(update_grade(HW4)));
-    connect(ui->hw5_spinbox,SIGNAL(valueChanged(int)),this,SLOT(update_grade(HW5)));
-    connect(ui->hw6_spinbox,SIGNAL(valueChanged(int)),this,SLOT(update_grade(HW6)));
-    connect(ui->hw7_spinbox,SIGNAL(valueChanged(int)),this,SLOT(update_grade(HW7)));
-    connect(ui->hw8_spinbox,SIGNAL(valueChanged(int)),this,SLOT(update_grade(HW8)));
-    connect(ui->Mid1_spinbox,SIGNAL(valueChanged(int)),this,SLOT(update_grade(Mid1)));
-    connect(ui->Mid2_spinbox,SIGNAL(valueChanged(int)),this,SLOT(update_grade(Mid2)));
-    connect(ui->Final_spinbox,SIGNAL(valueChanged(int)),this,SLOT(update_grade(Final_score)));
-*/
     connect(ui->pushButton,SIGNAL(clicked(bool)),this,SLOT(update_variables()));
     connect(ui->pushButton,SIGNAL(clicked(bool)),this,SLOT(calculate_grade()));
 
